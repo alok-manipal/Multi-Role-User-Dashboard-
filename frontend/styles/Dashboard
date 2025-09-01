@@ -1,0 +1,194 @@
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+}
+
+.dashboard-header {
+  font-size: 28px;
+  text-align: center;
+  font-weight: bold;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-bottom: 2px solid #ccc;
+}
+
+/* Sidebar */
+.dashboard-content {
+  display: flex;
+  flex: 1;
+}
+
+.sidebar {
+  width: 220px;
+  background-color: #eef;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sidebar h3 {
+  margin-bottom: 15px;
+  color: #555;
+  font-weight: bold;
+}
+
+.sidebar button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar button.active,
+.sidebar button:hover {
+  background-color: #0056b3;
+}
+
+.main-content {
+  flex: 1;
+  padding: 25px;
+  background-color: #ffffff;
+}
+
+/* Excel Upload / Fetch Sections */
+.excel-section,
+.excel-fetch {
+  background-color: #fdfdfd;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.excel-section h3,
+.excel-fetch h3 {
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.excel-section input[type="file"] {
+  margin-right: 10px;
+}
+
+.excel-section button,
+.excel-fetch button {
+  padding: 8px 16px;
+  font-size: 14px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.python-output {
+  margin-top: 15px;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 4px;
+  font-family: monospace;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.excel-table-container {
+  overflow-x: auto;
+  margin-top: 20px;
+}
+
+/* Data Display Area */
+.content-area {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.data-box {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.data-box h4 {
+  margin-bottom: 8px;
+  color: #333;
+}
+
+/* Footer */
+.dashboard-footer {
+  padding: 15px;
+  background-color: #ddd;
+  text-align: center;
+  color: black;
+}
+
+.dashboard-footer .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.dashboard-footer .social-icons a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Header Buttons */
+.header-buttons {
+  margin-top: 10px;
+  display: flex;
+  gap: 15px;
+  justify-content: right;
+}
+
+.home-btn, .toggle-mode {
+  padding: 6px 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.home-btn:hover, .toggle-mode:hover {
+  background-color: #0056b3;
+}
+
+/* Dark mode styles */
+.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+.dark-mode .sidebar {
+  background-color: #1e1e1e;
+}
+
+.dark-mode .main-section,
+.dark-mode .excel-section,
+.dark-mode .excel-fetch,
+.dark-mode .data-box {
+  background-color: #2b2b2b;
+  color: #eee;
+}
+
+.dark-mode .dashboard-footer {
+  background-color: #222;
+}
+
+.dark-mode .dashboard-footer a {
+  color: #eee;
+}
