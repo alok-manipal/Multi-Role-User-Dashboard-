@@ -1,0 +1,50 @@
+/* Header Buttons */
+.header-buttons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.home-btn, .toggle-mode {
+  padding: 6px 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.home-btn:hover, .toggle-mode:hover {
+  background-color: #0056b3;
+}
+
+/* Dark Mode */
+.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+.dark-mode .sidebar {
+  background-color: #1e1e1e;
+  border-right: 1px solid #333;
+}
+
+.dark-mode .main-section,
+.dark-mode .content-area {
+  background-color: #1e1e1e;
+}
+
+.dark-mode .data-box {
+  background-color: #2c2c2c;
+  color: white;
+}
+
+.dark-mode .dashboard-footer {
+  background-color: #222;
+}
+
+.dark-mode .social-icons a {
+  color: #ccc;
+}
